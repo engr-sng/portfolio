@@ -7,20 +7,20 @@
 /* スマートフォン */
 
 @media all and (max-width: 670px) {
-    .content-box-100 {
+    .content-box-col1 {
         width: 100%;
     }
       
-    .content-box-50 {
-        width: 90%;
+    .content-box-col2 {
+        width: 100%;
     }
     
-    .content-box-30 {
-        width: 45%;
+    .content-box-col3 {
+        width: 50%;
     }
     
-    .content-box-25 {
-        width: 45%;
+    .content-box-col4 {
+        width: 50%;
     }
 
     .menu-icon {
