@@ -1,5 +1,21 @@
 /* タブレット */
 @media all and (max-width: 960px) {
+    h1 {
+        font-size: 2.6em;
+    }
+    
+    h2 {
+        font-size: 1.9em;
+    }
+    
+    h3 {
+        font-size: 1.4em;
+    }
+    
+    h4 {
+        font-size: 1.0em;
+    }
+    
     .content-box-col1 {
         width: 100%;
     }
@@ -51,6 +67,22 @@
 /* スマートフォン */
 
 @media all and (max-width: 670px) {
+    h1 {
+        font-size: 2.0em;
+    }
+    
+    h2 {
+        font-size: 1.6em;
+    }
+    
+    h3 {
+        font-size: 1.3em;
+    }
+    
+    h4 {
+        font-size: 1.0em;
+    }
+
     .content-box-col1 {
         width: 100%;
     }

@@ -31,6 +31,10 @@ $(function() {
         $('.header-right').toggleClass('active');
     });
 
+    $('.nav-list-item a').click(function () {
+      $(this).parents('.header-right.active').removeClass('active');
+    });
+
     // モーダルウインドウ
     $('.modal-open').on('click', function() {
       const modal_id = 'modal-' + $(this).attr('id');
