@@ -33,6 +33,7 @@ $(function() {
 
     $('.nav-list-item a').click(function () {
       $(this).parents('.header-right.active').removeClass('active');
+      $(".openbtn1").removeClass('active');
     });
 
     // モーダルウインドウ
@@ -46,6 +47,14 @@ $(function() {
       const modal_id = $(this).parents('.modal-wrapper').attr('id');
       $('#' + modal_id).removeClass('active');
       console.log(modal_id);
+    });
+
+    // 画像ギャラリー
+    $(".image-gallery-box").click(function () {
+      $(this).parents('.image-gallery-container').children().removeClass('active');
+      $(this).addClass('active');
+      const main_image = $(this).attr('src');
+      $(this).parents('.shadow-box').children('#image-gallery-main').attr('src',main_image);;
     });
 
 });

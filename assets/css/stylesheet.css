@@ -330,9 +330,16 @@ hr.dashed_style {
     width: 100%;
 }
 
+.modal-open:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+    opacity: 0.7;
+}
+
 .production-text {
     font-size: 0.8em;
     text-align: center;
+    margin: 10px 0 0 0;
 }
 
 /* プロフィールレイアウト　*/
@@ -411,3 +418,18 @@ hr.dashed_style {
 	cursor: pointer;
 }
 
+.image-gallery-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.image-gallery-box {
+    padding: 5px;
+    width: 25%;
+    margin-bottom: 6px;
+
+}
+
+.image-gallery-box.active {
+    border: solid 3px #333333;
+}
