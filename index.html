@@ -11,6 +11,7 @@
         <!--CDN-->
         <script src="https://kit.fontawesome.com/06744c5d82.js" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
 
         <!--CSS-->
         <link rel="stylesheet" href="assets/css/stylesheet.css">
@@ -70,54 +71,27 @@
                         <h2 class="text-center headline_style">開発スキル</h2>
                     </section>
 
-                    <section class="content-box-col2">
+                    <section class="content-box-col3">
                         <div class="shadow-box">
-                            <h3 class="text-center"><span class="fa fa-pen-to-square"></span>開発言語</h3>
+                            <h3 class="text-center"><span class="fa fa-pen-to-square"></span>フロントエンド</h3>
                             <hr class="dashed_style">
-                            <h4><span class="fa fa-circle-check"></span>HTML / CSS / SCSS</h4>
-                            <P>基本的なデザインであるフルスクリーンレイアウトや2カラム・3カラムなどのマルチカラムレイアウト、カード・タイル型レイアウトなど、WEBアプリケーションやWEBサイトの種類に合わせたデザインは得意です。</P>
-                            <P>また、マルチデバイスに最適化した画面表示ができるコーディングのレスポンシブデザインが可能です。</P>
-                            <h4><span class="fa fa-circle-check"></span>JavaScript / jQuery</h4>
-                            <P>Webサイトに実装されている基本的な機能や動きをCSSと組み合わせたイベント処理の実装が可能です。</P>
-                            <P>また、Webアプリケーションでは画面遷移せずにデータを取得できる非同期通信のAjaxはもちろん、オープンソースやライブラリなどを使用し、データを視覚化するチャートやグラフなど描画の実装なども可能です。</P>
-                            <h4><span class="fa fa-circle-check"></span>Ruby / Ruby on Rails</h4>
-                            <P>基本的な登録機能・参照機能・変更機能・削除機能であるCRUD機能をはじめ、一括処理機能やWebAPIを利用した機能など、目的に合わせた機能の実装が可能です。</P>
-                            <P>また、MVCアーキテクチャの設計思想を理解し、クラスメソッドとインスタンスメソッドを使い分け、DRY原則を意識した可読性の高い効率の良いコーディングを意識した実装も可能です。</P>
+                            <canvas id="front_end_chart"></canvas>
                         </div>
                     </section>
 
-                    <section class="content-box-col2">
+                    <section class="content-box-col3">
                         <div class="shadow-box">
-                            <h3 class="text-center"><span class="fa fa-pen-to-square"></span>開発環境</h3>
+                            <h3 class="text-center"><span class="fa fa-pen-to-square"></span>バックエンド</h3>
                             <hr class="dashed_style">
-                            <h4><span class="fa fa-circle-check"></span>Personal Computer</h4>
-                            <P>現在は3代目の自作パソコンを使用しています。</P>
-                            <P>元々は音楽制作ソフトに合わせたスペックのため、開発にはオーバースペックな「OS=>Windows10、CPU=>Intel Core i9-9900K、RAM=>32GB、SSD=>1TB」構成となっており、プロセッサは3.60GHzです。</P>
-                            <h4><span class="fa fa-circle-check"></span>Storage</h4>
-                            <P>ストレージは主に「Dropbox」を使用しています。</P>
-                            <P>クラウドストレージを用いることでパソコン内部にデータは残さずにすみ、ノートパソコンやデスクトップパソコンなど、状況に応じて開発がしやすいようにデータを管理しています。</P>
-                            <h4><span class="fa fa-circle-check"></span>Editer</h4>
-                            <P>エディターは主に「Visual Studio Code」を使用しています。</P>
-                            <P>あまり強いこだわりはないため、「AWS Cloud9(Cloud IDE)」や「Adobe Dreamweaver」など開発環境に合わせて使用しています。</P>
-                            <h4><span class="fa fa-circle-check"></span>Source Code Management</h4>
-                            <P>ソースコード管理は主に「GitHub」を使用しています。</P>
-                            <P>GitHubの主要な機能でリポジトリごとにバージョン管理したり、グループ機能で協働開発しています。</P>
+                            <canvas id="back_end_chart"></canvas>
                         </div>
                     </section>
 
-                    <section class="content-box-col2">
+                    <section class="content-box-col3">
                         <div class="shadow-box">
-                            <h3 class="text-center"><span class="fa fa-pen-to-square"></span>その他</h3>
+                            <h3 class="text-center"><span class="fa fa-pen-to-square"></span>インフラ構築</h3>
                             <hr class="dashed_style">
-                            <h4><span class="fa fa-circle-check"></span>Contents Management System</h4>
-                            <P>ブログ運営は主に「WordPress」を使用しています。</P>
-                            <P>2018年からガジェット好きをターゲットにしたオウンドメディアを運用しており、有り難いことに今もなおPV数は少しずつ伸びて月間50,000PVを突破しております。</P>
-                            <h4><span class="fa fa-circle-check"></span>Web Server</h4>
-                            <P>ブログ運営やポートフォリオサイトのサーバーは主に「Xserver」を使用しています。</P>
-                            <P>Webサイトによってはサブドメインやサブディレクトリで運用するなど使い分けておりますが、コンテンツによってSEOに有利な構成になるよう構築しています。</P>
-                            <h4><span class="fa fa-circle-check"></span>Access Analysis</h4>
-                            <P>アクセス解析は主に「Googleアナリティクス/Googoleサーチコンソール/Rank Tracker」を使用しています。</P>
-                            <P>狙ったキーワードに対して意図した記事が上位表示されるようにデータ分析を行いながらコンテンツSEO対策をしています。</P>
+                            <canvas id="dev_ops_chart"></canvas>
                         </div>
                     </section>
 
@@ -232,5 +206,9 @@
 
         <!-- script.js読み込み -->
         <script src="assets/js/script.js"></script>
+        <script src="assets/js/front_end_chart.js"></script>
+        <script src="assets/js/back_end_chart.js"></script>
+        <script src="assets/js/dev_ops_chart.js"></script>
     </body>
 </html>
+
