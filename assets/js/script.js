@@ -54,7 +54,7 @@ $(function() {
       $(this).parents('.image-gallery-container').children().removeClass('active');
       $(this).addClass('active');
       const main_image = $(this).attr('src');
-      $(this).parents('.shadow-box').children('#image-gallery-main').attr('src',main_image);;
+      $(this).parents('.shadow-box').children('.image-gallery-main').attr('src',main_image);;
     });
 
 });

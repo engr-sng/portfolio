@@ -3,10 +3,10 @@ $(function() {
     const back_end_chart = new Chart(ctx, {
         type: 'radar',
         data: {
-            labels: ["HTML / CSS", "SCSS / Sass", "JavaScript",  "jQuery", "Ruby", "Ruby on Rails"],
+            labels: ["Ruby", "Ruby on Rails", "PHP", "Laravel", "API"],
             datasets: [{
                 label: "Back-End",
-                data: [5, 5, 3, 3, 4, 4],
+                data: [3, 3, 2, 2, 2],
                 backgroundColor: "rgba(54, 162, 235, 0.2)",
                 borderColor: "rgba(54, 162, 235, 1.0)",
             }]
@@ -19,7 +19,7 @@ $(function() {
             },
             scales: {
                 r: {
-                    max: 5,
+                    max: 3,
                     min: 0,
                     ticks: {
                         stepSize: 1

@@ -3,10 +3,10 @@ $(function() {
     const dev_ops_chart = new Chart(ctx, {
         type: 'radar',
         data: {
-            labels: ["AWS", "Linux", "Nginx", "Apache", "GitHub", "MySQL"],
+            labels: ["AWS", "Linux", "Nginx", "Apache", "SQL", "Git / GitHub"],
             datasets: [{
                 label: "DevOps",
-                data: [3, 1, 3, 1, 3, 2],
+                data: [2, 2, 2, 1, 2, 2],
                 backgroundColor: "rgba(255, 99, 132, 0.2)",
                 borderColor: "rgba(255, 99, 132, 1.0)",
             }]
@@ -19,7 +19,7 @@ $(function() {
             },
             scales: {
                 r: {
-                    max: 5,
+                    max: 3,
                     min: 0,
                     ticks: {
                         stepSize: 1
